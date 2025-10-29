@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">🎓 GPA Calculator</h1>
+            <p class="subtitle">Enter your courses, credit hours, and letter grades to calculate your GPA on a 4.0 scale.</p>
+        </header>
+
+        <main class="calculator">
+            <form id="gpaForm">
+                <!-- Dynamic courses will be added here -->
+                <div id="courses"></div>
+
+                <div class="buttons">
+                    <button type="button" onclick="addCourse()" class="form-button">+ Add Course</button>
+                    <button type="submit" class="form-button">Calculate GPA</button>
+                </div>
+            </form>
+
+            <section class="result">
+                <h2>📊 Result</h2>
+                <div id="showdata">Your GPA will appear here...</div>
+            </section>
+        </main>
+    </div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>

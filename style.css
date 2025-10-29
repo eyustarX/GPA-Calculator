@@ -1,0 +1,159 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    background: linear-gradient(135deg, #0f9d58, #34a853, #81c784);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    color: #333;
+    max-width: 500px;
+    width: 95%;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+.title {
+    font-size: 2rem;
+    color: #0f9d58;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Dynamic Course Group */
+.form-group.course-group {
+    border: 2px solid #0f9d58;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background: #f0fff0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group.course-group:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-group.course-group .form-control {
+    margin-bottom: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group.course-group .form-control:focus {
+    border-color: #0f9d58;
+    outline: none;
+    box-shadow: 0 0 8px rgba(15, 157, 88, 0.3);
+}
+
+/* Remove Button */
+.remove-btn {
+    background: #e53935;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.remove-btn:hover {
+    background: #ff6659;
+    transform: scale(1.1);
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.buttons .form-button {
+    flex: 1;
+    min-width: 130px;
+    margin: 5px 0;
+    background: #0f9d58;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buttons .form-button:hover {
+    background: #34a853;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Section */
+.result {
+    margin-top: 25px;
+    background: #e8f5e9;
+    border-radius: 15px;
+    padding: 20px;
+    color: #222;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+    color: #0f9d58;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#showdata {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#showdata.pass {
+    color: #0f9d58;
+}
+
+#showdata.fail {
+    color: #e53935;
+}
